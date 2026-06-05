@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Morgue — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Morgue browser extension and desktop app." />
+<style>
+  :root {
+    --bg: #F2F0EB; --surface: #ffffff; --text: #1A1917; --muted: #6b6862;
+    --border: #e2dfd8; --accent: #FF4405;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161412; --surface: #1f1c1a; --text: #F0EDE8; --muted: #9a958d; --border: #2c2926; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  .badge { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+  .badge .dot { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); display: flex; align-items: center; justify-content: center; }
+  .badge .name { font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700; letter-spacing: 0.12em; font-size: 13px; text-transform: uppercase; }
+  h1 { font-size: 30px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .updated { color: var(--muted); font-size: 13px; margin: 0 0 32px; }
+  h2 { font-size: 16px; margin: 34px 0 10px; letter-spacing: -0.01em; }
+  p, li { color: var(--text); font-size: 15px; }
+  .lead { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 16px 18px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">
+      <span class="dot">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7v10.5a.5.5 0 0 0 .8.4l1.7-1.3 1.7 1.3a.5.5 0 0 0 .6 0l1.7-1.3 1.7 1.3a.5.5 0 0 0 .6 0l1.7-1.3 1.7 1.3a.5.5 0 0 0 .8-.4V9a7 7 0 0 0-7-7Zm-2.2 8.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm4.4 0a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg>
+      </span>
+      <span class="name">Morgue</span>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 4, 2026</p>
+
+    <p class="lead">
+      Morgue is a local-first design-inspiration manager. The Morgue browser extension
+      sends data <strong>only to the Morgue desktop app on your own computer</strong>
+      (via <code>http://localhost:57432</code>). It does <strong>not</strong> send your
+      data to us, to our servers, or to any third party. There is no analytics, tracking,
+      advertising, or account.
+    </p>
+
+    <h2>What the extension accesses</h2>
+    <p>When you click <strong>Save</strong> (or use the right-click menu / keyboard shortcut),
+    the extension reads, <strong>for the current tab only</strong>:</p>
+    <ul>
+      <li>A <strong>screenshot</strong> of the visible page (website content)</li>
+      <li>The page's <strong>URL and title</strong> (web history / associated data)</li>
+      <li>Any <strong>name, tags, or folder</strong> you type into the popup</li>
+    </ul>
+    <p>It also stores one preference — your light/dark <strong>theme choice</strong> for the
+    popup — using the browser's local storage (<code>chrome.storage.local</code>).</p>
+    <p>The extension does <strong>not</strong> read your browsing history, other tabs,
+    passwords, form data, cookies, or any personal or financial information.</p>
+
+    <h2>Where your data goes</h2>
+    <p>All captured data is transmitted <strong>only</strong> to the Morgue desktop app on the
+    same computer, over a local connection (<code>localhost</code>), and stored in your local
+    Morgue library on your device. Nothing is uploaded to the internet by the extension.</p>
+
+    <h2>Optional AI features</h2>
+    <p>If you enable AI suggestions, the <strong>Morgue desktop app</strong> (not the extension)
+    may send the captured screenshot to an AI provider you choose (e.g. Anthropic), using an
+    API key <strong>you</strong> provide and store in the desktop app. This only happens when
+    you explicitly request a suggestion. The extension itself never contacts any AI service and
+    never handles your API key.</p>
+
+    <h2>Data sharing &amp; selling</h2>
+    <p>We do <strong>not</strong> sell or transfer your data to third parties. We do not use your
+    data for advertising, creditworthiness, or any purpose unrelated to the extension's single
+    purpose (saving pages into your local Morgue library).</p>
+
+    <h2>Data retention &amp; deletion</h2>
+    <p>Saved items live in your local Morgue library and are fully under your control — delete
+    them in the app at any time. Uninstalling the extension removes its stored theme preference.
+    We hold no copy of your data because we never receive it.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy; material changes will be reflected here with a new date.</p>
+
+    <hr />
+    <footer>
+      Questions? Contact <a href="mailto:evan@nexionweb.agency">evan@nexionweb.agency</a>.
+    </footer>
+  </div>
+</body>
+</html>
